@@ -1,0 +1,135 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@font-face {
+    font-family: fonte01;
+    src: url(fonts/GraduateShades.otf) format('opentype');
+}
+
+@font-face {
+    font-family: fonte02;
+    src: url(fonts/fonte02.otf) format('opentype');
+}
+*{
+    margin: 0px;
+}
+:root{
+    --cor00: white;
+    --cor01: #A8A5A5;
+    --cor02: #696969;
+    --cor03: #6D6C6C;
+    --cor04: #AD3737;
+    --cor05: black;
+}
+
+body{
+    background-color: var(--cor03);
+    font-family: Merriweather, serif;
+    font-weight: 400;
+}
+
+h2, h3{
+    margin: 19px 19x 19x 0px;
+    padding: 19px 0px 0px 0px;
+    text-indent: 7px;
+    font-family: fonte01, sans-serif;
+}
+
+p{
+    margin: 16px 0px 16px 0px;
+    text-indent: 10px;
+    padding-left: 3px;
+}
+
+header{
+    background-color: var(--cor01);
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 21px;
+}
+header > h1{
+    text-align: center;
+    color: var(--cor05);
+    font-family: fonte01, serif;
+    font-size: 1.5em;
+}
+
+nav{
+    padding-left: 5px;
+    margin-top: 2em;
+    font-family: fonte01, sans-serif;
+}
+
+nav > a{
+    color: var(--cor00);
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+main{
+    background-color: var(--cor02);
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--cor03);
+    border-radius: 5px;
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+
+}
+
+main > section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+main > section > article{
+    padding: 1px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+li{
+    font-family: fonte01;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+main > section > article > aside{
+    color: black;
+    padding: 1px;
+
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+footer > p{
+    padding: 0px;
+    margin: 0px;
+}
+#foottct{
+    font-family: fonte02, arial;
+}
+
+.pagbestpyh2{
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+
+
+#pcr7{
+    margin-bottom: 15px;
+}
+
+#navchampleague{
+    color: var(--cor00);
+    text-decoration: none;
+}

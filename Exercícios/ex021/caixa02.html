@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Text</title>
+    <style>
+            @font-face {
+                font-family: fonte;
+                src: url(fonts/GraduateShades.otf) format('opentype');
+
+            }
+            @font-face {
+                font-family: fonte02;
+                src: url(fonts/fonte02.otf) format('opentype');
+            }
+
+            body{
+                font-family: fonte;
+                background-color: dimgray;
+                margin: 0px;
+            }
+
+            header{
+                background-color: rgb(168, 165, 165);
+                padding: 10px;
+                margin-top: 10px;
+            }
+            nav > a{
+                text-decoration: none;
+                margin-right: 1em;
+                color: white;
+            }
+
+            nav > a:hover{
+                text-decoration: underline;
+            }
+            main{
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+            }
+            footer{
+                background-color: black;
+                color: white;
+                padding: 4px;
+                text-align: center;
+                margin: 0px;
+
+            }
+            article{
+                background-color: rgb(109, 108, 108);
+                padding: 1px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                border-radius: 5px;
+            }
+
+            article > aside{
+                background-color: rgb(173, 55, 55);
+                padding: 1px;
+                color: white;
+            }
+
+            header > p{
+                text-align: center;
+                font-size: 1.5em;
+            }
+
+            .information{
+                text-decoration: none;
+            }
+
+            footer > p{
+                margin: 0px;
+            }
+            nav{
+                padding: 6px;
+            }
+
+            #fonte02{
+                font-family: fonte02;
+                font-size: 17px;
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>Campeonatos mais Famosos</p>
+        <nav>
+            <a href="#">ChampionsLeague</a>
+            <a href="#">Primier League</a>
+            <a href="https://www.laliga.com/en-GB">La Liga</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Laliga">
+            <article>
+                <h2>La Liga</h1>
+                <p><abbr title="36 LaLiga" class="information">Real Madrid</abbr>, Barcelona, Real Valloid, Osasuna</p>
+                <aside>Fornecido por tct</aside>
+            </article>
+        </section>
+        <section id="ChampionsLeague">
+            <article>
+                <h2>ChampionsLeague</h2>
+                <p><abbr title="15 Champions" class="information">Real Madrid</abbr>, Bayren de Munich, Barcelona, Ac Milan, Juventus, Young Boys, Borussia Dortmund, Manchester United, Manchester City, Sporting, Benfica, Paris Saint-German</p>
+                <aside>
+                    Fornecido por tct
+                </aside>
+            </article>
+        </section>
+        <section id="Primier League">
+            <article>
+                <h2>Primier League</h2>
+                <p>
+                    Manchester United, Manchester City, Arsenal, Liverpool, Chelsea,Aston Villa.
+                </p>
+                <aside>
+                    Fornecido por tct
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Making for <span id="fonte02">tct</span> 2024</p>
+    </footer>
+    
+</body>
+</html>
