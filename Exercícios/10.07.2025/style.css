@@ -159,7 +159,7 @@ aside h3 {
 
 #list-systems-aside {
     columns: 2;
-    margin: 0px 10px 10px 47px;
+    margin: 0px 4px 8px 13px;
     list-style: none;
 }
 
@@ -198,7 +198,8 @@ footer {
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: bold;
+    font-size: 12px;
     padding: 0px;
     margin: 0px;
 }
