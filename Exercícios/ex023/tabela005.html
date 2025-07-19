@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .first_col {
+            background-color: yellow;
+        }
+
+        .second_col {
+            background-color: gray;
+        }
+
+        .third_col {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="first_col">
+            <col class="second_col">
+            <col class="third_col">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Género</th>
+                <th scope="col">Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nsuka</td>
+                <td>Masculino</td>
+                <td>14 anos</td>
+            </tr>
+            <tr>
+                <td>Leonor</td>
+                <td>Feminino</td>
+                <td>Tlvz 14</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
