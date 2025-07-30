@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" id="inome" name="nome" required minlength="5" maxlength="15" size="30" placeholder="Digite seu nome" style="box-sizing: border-box; padding: 10px; border: 1px solid; box-shadow: 1px 1px 5px black; border-radius: 5px;">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" id="isenha" name="senha" required minlength="8">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+        <p>
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
