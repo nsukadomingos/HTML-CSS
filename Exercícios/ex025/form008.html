@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms with Js.</title>
+</head>
+<body>
+    <h1>Formularios com Js</h1>
+    <form action="" method="get">
+        <p>
+            <label for="inum1">Número 1:</label>
+            <input type="number" name="num1" id="inum1" oninput="ioutput.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+        <p>
+            <label for="inum2">Número 2:</label>
+            <input type="number" name="num2" id="inum2" oninput="ioutput.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+        <p>
+            <label for="ioutpu">Resultado:</label>
+            <output for="inum1 inum2" id="ioutput">Hello Word</output>
+        </p>
+    </form>
+</body>
+</html>

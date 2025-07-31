@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="" method="post">
+        <fieldset>
+            <p>
+                <label for="iestado"> Seu Estado: </label>
+                <select name="Estados" id="iestado">
+                    <optgroup value ="Municípios de Luanda">
+                        <option value="Luanda">Luanda</option>
+                        <option value="Cacuaco">Cacuaco</option>
+                        <option value="Viana" selected>Viana</option>
+                        <option value="Belas">Belas</option>
+                        <option value="Kilamba Kiaxi">Kilamba Kiaxi</option>
+                    </optgroup>
+                    <optgroup label="Outros Municípios">
+                        <option value="Benguela">Benguela</option>
+                        <option value="Huambo">Huambo</option>
+                        <option value="Lunda Norte">Lunda Norte</option>
+                        <option value="Namibe">Namibe</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iempredo">Sua Profissão:</label>
+                <input type="text" name="profissao" id="iempredo" required placeholder="Digite sua profissão" list="iprofissoes">
+                <datalist id="iprofissoes">
+                    <option value="Engenheiro"></option>
+                    <option value="Médico"></option>
+                    <option value="Professor"></option>
+                    <option value="Arquiteto"></option>
+                    <option value="Designer"></option>
+                </datalist>
+            </p>
+            <p>
+                <label for="itext">Sua mensagem:</label>
+                <textarea name="mensagem" id="itext" rows="15" cols="60 "  placeholder="Digite sua mensagem"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
