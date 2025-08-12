@@ -4,11 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/portrait.css" media="screen and (orientation: portrait)">
-    <link rel="stylesheet" href="estilos/landscape.css" media="screen and (orientation: landscape)">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+
+            background-repeat: no-repeat;
+
+            background-position: left bottom;
+
+            background-size: contain;
+
+            background-color: #233eff;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: white;
+            padding-top: 20px;
+        }
+
+        @media screen and (orientation: landscape) {
+            body {
+                background-image: url(imagens/cev-landscape.jpg);
+            }
+        }
+
+        @media screen and (orientation: portrait) {
+            body {
+                background-image: url(imagens/cev-portrait.jpg);
+
+                background-position: center bottom;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Não quero criar assunto para ti</h1>
+    <h1>
+        "Curso em Vídeo"</h1>
 </body>
 </html>
