@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querys</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+</head>
+
+<body>
+    <header>
+        <h1>Maldini</h1>
+        <span class="material-symbols-outlined" id="menu" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="itens">
+            <ul>
+                <h3>Opcões</h3>
+                <li>Opção 1</li>
+                <li>Opção 2</li>
+                <li>Opção 3</li>
+                <li>Opção 4</li>
+                <li>Opção 5</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>História do Maldini</h2>
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aut enim provident minus
+                        excepturi cum quaerat facilis consequatur necessitatibus magnam assumenda doloremque nesciunt
+                        quam sint soluta numquam, quis sapiente deserunt?</span><span>Iusto culpa nemo, fugiat facilis
+                        ab dolore a aspernatur voluptate eum fuga modi consectetur quis quia accusantium facere dicta
+                        excepturi doloribus odio fugit corrupti obcaecati quo reiciendis provident reprehenderit?
+                        In!</span><span>Quibusdam ex quasi dicta asperiores, expedita, repudiandae quidem soluta ipsam
+                        atque, eum cupiditate. Optio, porro, sed tempore eligendi odio numquam nostrum hic sit aliquid
+                        voluptates saepe atque! Maiores, eaque? Quasi.</span></p>
+
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo, aliquid nulla nostrum
+                        ea quidem? Aut quae voluptas harum corporis. Commodi ducimus dolor libero, cupiditate
+                        perspiciatis magni obcaecati aperiam quisquam.</span><span>Porro, praesentium est laudantium
+                        officiis atque nostrum nulla nemo ducimus placeat! Eligendi rem molestiae aperiam tempora iure
+                        veritatis, quod rerum voluptatibus hic nihil officiis labore et ratione suscipit voluptatum
+                        doloribus.</span><span>Eaque veniam voluptatum porro nulla nobis. Quis quas minima quo soluta
+                        itaque incidunt rem voluptatum ipsum, animi ad doloremque dolores perferendis sunt neque nostrum
+                        fugiat eveniet alias, impedit voluptatem ducimus!</span></p>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'none') {
+                itens.style.display = 'block'
+            }else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+
+</body>
+
+</html>
