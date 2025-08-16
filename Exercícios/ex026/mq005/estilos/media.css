@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/*Media Querys para telas maiores*/
+
+/*Media para Tablet*/
+
+@media screen and (min-width: 482px) and (max-width: 768px) {
+    span#menu {
+        display: none;
+    }
+
+    header > menu#itens {
+        display: block;
+    }
+
+    header > h1 {
+        padding: 10px;
+    }
+
+    header > menu > ul > h3 {
+        display: none;
+    }
+
+    header > menu ul {
+        background-color: transparent;
+        padding-left: 5px ;
+    }
+
+    header > menu#itens > ul > li {
+        display: inline-block;
+        padding: 10px;
+        border-bottom: 0px;
+        margin-right: 8px;
+        background-color: rgb(83, 83, 83);
+    }
+
+    header > menu > ul > li:hover {
+        background-color: rgb(185, 185, 185);
+        color: #fff;
+    }
+
+    main {
+        max-width: 70%;
+    }
+}
+
+    /*Laptop Version*/
+
+    @media screen and (min-width: 769px) {
+    
+    span#menu {
+        display: none;
+    }
+
+    header > menu#itens {
+        display: block;
+    }
+
+    header > h1 {
+        padding: 10px;
+    }
+
+    header > menu > ul > h3 {
+        display: none;
+    }
+
+    header > menu ul {
+        background-color: transparent;
+        padding-left: 5px ;
+    }
+
+    header > menu#itens > ul > li {
+        display: inline-block;
+        padding: 10px;
+        border-bottom: 0px;
+        margin-right: 8px;
+        background-color: rgb(83, 83, 83);
+    }
+
+    header > menu > ul > li:hover {
+        background-color: rgb(185, 185, 185);
+        color: #fff;
+    }
+
+    main {
+        width: 600px;
+    }
+}
