@@ -18,7 +18,7 @@ Curso do Gustvo Guanabara (HTML & CSS)
  <br>
   -Exercício 6 - <a href="Exercícios/ex006/index.html">Clique Aqui</a>
  <br>
-  -Exercício 7 - <a href="Exercícios/ex007/index.html">Clique Aqui</a>
+  -Exercício 7 - <a href="Exercícios/ex007/html4.html">Clique Aqui</a>
  <br>
   -Exercício 8 - <a href="Exercícios/ex008/index.html">Clique Aqui</a>
  <br>
