@@ -58,3 +58,6 @@ Curso do Gustvo Guanabara (HTML & CSS)
  <br>
   -Exercício 26 - <a href="Exercícios/ex026/index.html">Clique Aqui</a>
  <br>
+
+ -Exercício 27 - <a href="Exercícios/ex027/index.html">Clique Aqui</a>
+ <br>
