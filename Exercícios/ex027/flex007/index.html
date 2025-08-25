@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Module 1</title>
+    <style>
+        /*Aprendendo a usar  a propriedade order*/
+        div.container {
+            background-color: aqua;
+            display: flex;
+        }
+        div.item {
+            flex: auto;
+            background-color: blue;
+            border: 1px solid black;
+        }
+
+        div#first {
+            background-color: red;
+            order: -1;
+        }
+
+        div#second {
+            background-color: orange;
+            order: 1;
+        }
+
+        div#third {
+            background-color: yellow;
+            order: 2;
+        }
+
+        div#fourth {
+            background-color: green;
+            order: 3;
+        }
+
+        div#fifth {
+            background-color: blue;
+            order: 4;
+        }
+
+        div#sixth {
+            background-color: indigo;
+            order: 5;
+        }
+
+        div#seventh {
+            background-color: violet;
+            order: 6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="first">A</div>
+        <div class="item" id="second">B</div>
+        <div class="item" id="third">C</div>
+        <div class="item" id="fourth">D</div>
+        <div class="item" id="fifth">E</div>
+        <div class="item" id="sixth">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

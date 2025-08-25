@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <style>
+        :root {
+            --corpreta: #110B11;
+            --cor2: #6A706E;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        html, body {
+            height: 100dvh;
+        }
+
+        header > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            background-color: var(--corpreta);
+            color: white;
+        }
+
+        header > menu#menu-burguer {
+            display: none;
+        }
+
+        header > menu > ul {
+            display: flex;
+            align-content: center;
+            list-style-type: none;
+            text-align: center;
+            padding: 5px;
+            background-color: var(--cor2);
+            flex-flow: column wrap;
+        }
+
+        header li {
+            margin: 10px 0px;
+        }
+
+        header > menu > ul > li > a {
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        header > menu > ul > li > a:hover {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        main > section#first_section {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url(imgs/nicola-abrescia-fZDN0vH60iA-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-position: left center ;
+        }
+
+        main > section#first_section > article {
+            text-align: center;
+            color: white;
+            font-weight: normal;
+        }
+
+        
+        main > section#first_section > article > h1 {
+            font-size: 2rem;
+            text-wrap: wrap;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+        }
+        
+        main > section#first_section > article > p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.5rem;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        main > section#first_section > article:nth-child(2) {
+            display: flex;
+            padding: 5px;
+            border-radius: 15px;
+            background-color: rgba(245, 245, 245, 0.486);
+        }
+
+        main > section#first_section > article:nth-child(2) > img {
+            width: 30px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const menu = document.getElementById("menu-burguer");
+        const burguer = document.getElementById("burguer");
+        
+        if (!menu || !burguer) {
+            console.error('Elementos necessários não encontrados');
+            return;
+        }
+
+        burguer.addEventListener("click", function() {
+            const isMenuHidden = menu.style.display === "none" || getComputedStyle(menu).display === "none";
+            
+            menu.style.display = isMenuHidden ? "block" : "none";
+        });
+    });
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>CR7</h1>
+            <span class="material-symbols-outlined" id="burguer">menu</span>
+        </div>
+        <menu id="menu-burguer">
+            <ul>
+                <li><a href="#first_section">Cristiano Ronaldo</a></li>
+                <li><a href="#second_section">Achievements</a></li>
+                <li><a href="#third_section">Teams</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <section class="sections" id="first_section">
+            <article>
+                <h1>Cristiano Ronaldo</h1>
+                <p>The Goat</p>
+            </article>
+            <article>
+                <img src="imgs/nike_logo_icon_181293.png" alt="">
+                <img src="imgs/portugal_flag_flags_20417.png" alt="">
+                <img src="imgs/real_madrid_footballteam_18009.png" alt="">
+                <img src="imgs/manchester_united_17973.png" alt="">
+            </article>
+        </section>
+    </main>
+</body>
+</html>
