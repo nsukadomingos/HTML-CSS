@@ -9,12 +9,18 @@
         :root {
             --corpreta: #110B11;
             --cor2: #6A706E;
+            --cor3: #f5f3f5;
+            --cor4: #C5283D;
+            --cor5: #cfd11a;
+            --cor6: #006600;
         }
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
         html, body {
             height: 100dvh;
@@ -24,7 +30,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 5px;
+            padding: 10px;
             height: 50px;
             background-color: var(--corpreta);
             color: white;
@@ -48,6 +54,17 @@
             padding: 5px;
             background-color: var(--cor2);
             flex-flow: column wrap;
+            animation: appear 0.3s linear;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         header li {
@@ -75,6 +92,7 @@
             text-align: center;
             background-image: url(imgs/nicola-abrescia-fZDN0vH60iA-unsplash.jpg);
             background-size: cover;
+            background-color: var(--corpreta);
             background-repeat: no-repeat;
             height: calc(100dvh - 50px);
             background-position: left center ;
@@ -84,10 +102,12 @@
             text-align: center;
             color: white;
             font-weight: normal;
+            margin: 10px 0px;
         }
 
         
         main > section#first_section > article > h1 {
+            font-family: 'Staatliches';
             font-size: 2rem;
             text-wrap: wrap;
             text-transform: uppercase;
@@ -95,8 +115,10 @@
         }
         
         main > section#first_section > article > p {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Cinzel';
             font-size: 1.5rem;
+            color: rgb(190, 163, 8);
+            text-shadow: 0px 0px 15px rgba(243, 208, 9, 0.404);
             font-weight: 100;
             margin-bottom: 10px;
         }
@@ -110,6 +132,26 @@
 
         main > section#first_section > article:nth-child(2) > img {
             width: 30px;
+        }
+
+        main > section#secound_section {
+            background-color: var(--corpreta);
+            height: auto;
+        }
+
+        #second_section > div > h1 {
+            transition: comeback 0.3 linear;
+        }
+
+        @keyframes comeback {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
     <script>
@@ -133,6 +175,21 @@
                 
             })
         })
+        
+    document.addEventListener("DOMContentLoaded", function() {
+    const secoundSection = document.getElementById("secound_section");
+    const videoFirst = document.getElementById("video-first");
+
+    if (!secoundSection || !videoFirst) {
+        console.error("Section or video element not found");
+        return;
+    }
+
+    secoundSection.addEventListener("mouseover", function() {
+        videoFirst.play();
+        videoFirst.loop();
+    });
+});
     </script>
 </head>
 <body>
@@ -152,14 +209,44 @@
     <main id="mymain">
         <section class="sections" id="first_section">
             <article>
-                <h1>Cristiano Ronaldo</h1>
-                <p>The Goat</p>
+                <h1>Cristiano <span style="color: rgb(156, 7, 7); font-family: Staatliches; font-weight: boledr;">Ronaldo</span></h1>
+                <!--<p>The Goat</p>-->
             </article>
             <article>
                 <img src="imgs/nike_logo_icon_181293.png" alt="">
                 <img src="imgs/portugal_flag_flags_20417.png" alt="">
                 <img src="imgs/real_madrid_footballteam_18009.png" alt="">
                 <img src="imgs/manchester_united_17973.png" alt="">
+            </article>
+        </section>
+        <section id="secound_section">
+            <div id="video-container-first">
+                
+                <!--<h1 style="color: orange; transform: translateY(60px); padding: 10px;;">#CR7 Museum</h1>-->
+                <video style="width: 100%; margin: 10px 0px;" muted id="video-first">
+                    <source src="./imgs/CR7Life-OpeningMuseum.mp4" type="video/mp4">
+                </video>
+            </div>
+            <article style="padding: 20px;">
+                <h1 style="color: whitesmoke; margin: 10px 0px;">Achievements</h1>
+                <p style="color: white; font-weight: normal; text-indent: 20pt; line-height: 31px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem quasi sunt qui doloribus cupiditate nisi dolor accusamus blanditiis necessitatibus voluptates ad eveniet modi harum dolore, hic enim totam tempore dignissimos fuga vel laudantium porro? Enim, quaerat sapiente. Natus!
+                Impedit dicta tempore deserunt officiis blanditiis quibusdam, fuga a. Voluptatibus nam dolor reiciendis, fugit incidunt non rem modi omnis ab et mollitia nesciunt perspiciatis eos, cum placeat, repellat repellendus animi.
+                </p>
+            </article>
+        </section>
+        <section id="third_section">
+            <article>
+                <h2>Career Teams</h2>
+                <ul>
+                    <li>Sporting CP</li>
+                    <div style="width: 100%;">
+                        <video autoplay loop muted width="100%"><source src="imgs/CR7_WebsiteHighlights-Sporting_mobile.mp4"></video>
+                    </div>
+                    <li>Manchester United</li>
+                    <li>Real Madrid</li>
+                    <li>Juventus</li>
+                </ul>
             </article>
         </section>
     </main>
