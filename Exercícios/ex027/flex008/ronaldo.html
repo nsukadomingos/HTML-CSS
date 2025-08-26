@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,12 +29,18 @@
             color: white;
         }
 
+        header  div span#burguer {
+            cursor: pointer;
+        }
+
         header > menu#menu-burguer {
             display: none;
         }
-
+        
         header > menu > ul {
             display: flex;
+            height: calc(100vh - 50px);
+            justify-content: center;
             align-content: center;
             list-style-type: none;
             text-align: center;
@@ -50,6 +56,7 @@
         header > menu > ul > li > a {
             font-weight: lighter;
             font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
             color: whitesmoke;
             text-decoration: none;
         }
@@ -68,7 +75,7 @@
             background-image: url(imgs/nicola-abrescia-fZDN0vH60iA-unsplash.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            height: 100vh;
+            height: 92vh;
             background-position: left center ;
         }
 
@@ -105,21 +112,26 @@
         }
     </style>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const menu = document.getElementById("menu-burguer");
-        const burguer = document.getElementById("burguer");
-        
-        if (!menu || !burguer) {
-            console.error('Elementos necessários não encontrados');
-            return;
-        }
+        document.addEventListener("DOMContentLoaded", function() {
+            const menu = document.getElementById("menu-burguer");
+            const burguer = document.getElementById("burguer");
+            const seccao = document.getElementById("mymain");
 
-        burguer.addEventListener("click", function() {
-            const isMenuHidden = menu.style.display === "none" || getComputedStyle(menu).display === "none";
-            
-            menu.style.display = isMenuHidden ? "block" : "none";
-        });
-    });
+            if (!menu || !burguer) {
+                console.error("Menu or burguer element not found");
+                return;
+            }
+
+            burguer.addEventListener("click", function () {
+                if (menu.style.display === "none") {
+                    menu.style.display = "block";
+                    seccao.style.display = "none";
+                } else {
+                    menu.style.display = "none";
+                    seccao.style.display ="block";                }
+                
+            })
+        })
     </script>
 </head>
 <body>
@@ -136,7 +148,7 @@
             </ul>
         </menu>
     </header>
-    <main>
+    <main id="mymain">
         <section class="sections" id="first_section">
             <article>
                 <h1>Cristiano Ronaldo</h1>
