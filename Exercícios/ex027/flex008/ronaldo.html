@@ -84,8 +84,13 @@
             text-decoration: underline;
         }
 
-        main > section#first_section {
+        main {
             display: flex;
+            flex-flow: column wrap;
+        }
+
+        main > section#first_section {
+            display: none;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
@@ -135,6 +140,9 @@
         }
 
         main > section#secound_section {
+            display: flex;
+            flex-flow: column wrap;
+            order: 2;
             background-color: var(--corpreta);
             height: auto;
         }
@@ -152,6 +160,10 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+
+        main > section#third_section {
+            order: 1;
         }
     </style>
     <script>
@@ -176,7 +188,7 @@
             })
         })
         
-    document.addEventListener("DOMContentLoaded", function() {
+    /*document.addEventListener("DOMContentLoaded", function() {
     const secoundSection = document.getElementById("secound_section");
     const videoFirst = document.getElementById("video-first");
 
@@ -189,7 +201,7 @@
         videoFirst.play();
         videoFirst.loop();
     });
-});
+});*/
     </script>
 </head>
 <body>
@@ -220,14 +232,14 @@
             </article>
         </section>
         <section id="secound_section">
-            <div id="video-container-first">
+            <div id="video-container-first" style="order: 2;">
                 
                 <!--<h1 style="color: orange; transform: translateY(60px); padding: 10px;;">#CR7 Museum</h1>-->
-                <video style="width: 100%; margin: 10px 0px;" muted id="video-first">
+                <video style="width: 100%; margin: 10px 0px;" muted id="video-first" autoplay>
                     <source src="./imgs/CR7Life-OpeningMuseum.mp4" type="video/mp4">
                 </video>
             </div>
-            <article style="padding: 20px;">
+            <article style="padding: 20px;" style="order: 1;">
                 <h1 style="color: whitesmoke; margin: 10px 0px;">Achievements</h1>
                 <p style="color: white; font-weight: normal; text-indent: 20pt; line-height: 31px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Exercitationem quasi sunt qui doloribus cupiditate nisi dolor accusamus blanditiis necessitatibus voluptates ad eveniet modi harum dolore, hic enim totam tempore dignissimos fuga vel laudantium porro? Enim, quaerat sapiente. Natus!
@@ -237,12 +249,14 @@
         </section>
         <section id="third_section">
             <article>
-                <h2>Career Teams</h2>
                 <ul>
-                    <li>Sporting CP</li>
-                    <div style="width: 100%;">
-                        <video autoplay loop muted width="100%"><source src="imgs/CR7_WebsiteHighlights-Sporting_mobile.mp4"></video>
+                    <div style="width: 295px; background-color: var(--cor2); padding: 5px;">
+                        <li style="font-weight: bold; margin: 1px 0px; display: block;">Sporting CP</li>
+                        <div style="width: 100%; height:535px;">
+                            <video autoplay loop muted style="width: 100%; border-radius: 15px; border-bottom: 3px solid var(--cor6); height: 100%;"><source src="imgs/CR7_WebsiteHighlights-Sporting_mobile.mp4"></video>
+                        </div>
                     </div>
+                    <br><br><br>
                     <li>Manchester United</li>
                     <li>Real Madrid</li>
                     <li>Juventus</li>
