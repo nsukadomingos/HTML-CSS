@@ -21,6 +21,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
         }
         html, body {
             height: 100dvh;
@@ -140,9 +141,8 @@
         }
 
         main > section#secound_section {
-            display: flex;
+            display: none;
             flex-flow: column wrap;
-            order: 2;
             background-color: var(--corpreta);
             height: auto;
         }
@@ -160,10 +160,6 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-        }
-
-        main > section#third_section {
-            order: 1;
         }
     </style>
     <script>
@@ -232,14 +228,14 @@
             </article>
         </section>
         <section id="secound_section">
-            <div id="video-container-first" style="order: 2;">
+            <div id="video-container-first">
                 
                 <!--<h1 style="color: orange; transform: translateY(60px); padding: 10px;;">#CR7 Museum</h1>-->
                 <video style="width: 100%; margin: 10px 0px;" muted id="video-first" autoplay>
                     <source src="./imgs/CR7Life-OpeningMuseum.mp4" type="video/mp4">
                 </video>
             </div>
-            <article style="padding: 20px;" style="order: 1;">
+            <article style="padding: 20px;">
                 <h1 style="color: whitesmoke; margin: 10px 0px;">Achievements</h1>
                 <p style="color: white; font-weight: normal; text-indent: 20pt; line-height: 31px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Exercitationem quasi sunt qui doloribus cupiditate nisi dolor accusamus blanditiis necessitatibus voluptates ad eveniet modi harum dolore, hic enim totam tempore dignissimos fuga vel laudantium porro? Enim, quaerat sapiente. Natus!
@@ -250,16 +246,17 @@
         <section id="third_section">
             <article>
                 <ul>
-                    <div style="width: 295px; background-color: var(--cor2); padding: 5px;">
-                        <li style="font-weight: bold; margin: 1px 0px; display: block;">Sporting CP</li>
-                        <div style="width: 100%; height:535px;">
-                            <video autoplay loop muted style="width: 100%; border-radius: 15px; border-bottom: 3px solid var(--cor6); height: 100%;"><source src="imgs/CR7_WebsiteHighlights-Sporting_mobile.mp4"></video>
+                    <div style=" background-color: var(--cor2); padding: 5px; display: flex; gap: 10px; overflow-x: hidden; ">
+                        <div style="width: calc(100vw - 40vw);">
+                            <video autoplay loop muted style=" width: 100%; border-radius: 15px; border-bottom: 3px solid var(--cor6);"><source src="imgs/CR7_WebsiteHighlights-Sporting_mobile.mp4"></video>
+                        </div>
+                        <div style="width: calc(100vw - 40vw);">
+                            <video autoplay loop muted style=" width: 100%; border-radius: 15px; border-bottom: 3px solid var(--cor3);"><source src="imgs/CR7_WebsiteHighlights-Juventus_mobile.mp4"></video>
+                        </div>
+                        <div style="width: calc(100vw - 40vw);">
+                            <div><video autoplay loop muted style=" width: 100%; border-radius: 15px; border-bottom: 3px solid var(--cor4);"><source src="imgs/CR7_WebsiteHighlights-ManUtd_mobile.mp4"></video></div>
                         </div>
                     </div>
-                    <br><br><br>
-                    <li>Manchester United</li>
-                    <li>Real Madrid</li>
-                    <li>Juventus</li>
                 </ul>
             </article>
         </section>
