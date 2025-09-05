@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+</head>
+<body>
+    <style>
+        div#container {
+            display: flex;
+            background-color: aqua;
+            flex-flow: row nowrap;
+        }
+        div.item {
+            background-color: blue;
+            border: 1px solid black;
+            flex-basis: 150px;
+            text-align: center;
+        }
+    </style>
+    <div id="container">
+        <div class="item">A</div>
+        <div class="item">Outro Conteudo</div>
+        <div class="item">Vasco dda Gamouse</div>
+        <div class="item">B</div>
+        <div class="item">D</div>
+    </div>
+</body>
+</html>
