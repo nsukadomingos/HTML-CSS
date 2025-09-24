@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --breakpoint-tl: 420px;
+        } 
+    </style>
+    <title>Menu com FlexBox</title>
+</head>
+<body class="bg-[#EBE5B2]">
+    <header class="bg-[#F7C69F] w-full flex flex-row max-md:flex-col justify-between max-md:justify-items-center max-md:items-center">
+        <section class="pb-3 pt-3 pl-1">
+            <h1 class="text-center text-3xl text-white font-bold">FlexBox</h1>
+        </section>
+        <menu class=" max-md:w-[60%] flex  min-md:pd-1 max-md:pb-3">
+            <ul class=" flex max-md:flex-col gap-8 max-md:gap-0 max-md: max-md:bg-[#F89B7E] justify-center items-center w-full rounded-lg max-md:shadow-md">
+
+                <li class=" cursor-pointer p-1 hover:text-white hover:text-white hover:font-bold border-b-1 border-solid border-[#EBE5B2] text-center">Botao 1</li>
+
+                <li class=" cursor-pointer  p-1 hover:text-white hover:text-white  hover:font-bold border-b-1 border-solid border-[#EBE5B2] text-center">Botao 2</li>
+
+                <li class=" cursor-pointer p-1 hover:text-white hover:font-bold border-b-1 border-solid max-md:border-none border-[#EBE5B2] text-center">Botao 3</li>
+                
+            </ul>
+        </menu>
+    </header>
+    <main class="flex justify-center">
+        <section class="w-[600px] max-md:w-[370px] bg-[#F6F3C2] p-[20px] rounded-b-lg shadow-md">
+            <article>
+                <h1 class="indent-5 font-bold text-lg">O Meu Mundo Aberto</h1>
+                <p class="text-justify"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde dolore, quis recusandae hic tenetur facere rerum itaque, reprehenderit fugiat totam alias, eveniet illo mollitia tempora. Vel temporibus repudiandae asperiores corrupti.</span><span>Aliquam ipsa assumenda est debitis. Fuga veritatis rem quia placeat qui ab? Ad voluptates voluptas qui numquam error dolore ea impedit, explicabo sed sapiente! Quae, voluptatem itaque! Hic, magni maiores?</span><span>Possimus quam maxime officiis eaque fuga dolores excepturi. Possimus asperiores illo fugiat ipsum cumque mollitia, recusandae accusantium doloribus! Consequatur porro blanditiis voluptate nam aspernatur amet quod possimus soluta voluptatum et?</span><span>Doloremque, saepe inventore quia eligendi, provident illum voluptatibus delectus debitis nemo culpa, laborum sit aut numquam fugiat iure magni a nobis? Possimus ab earum quisquam cupiditate, sit id unde nesciunt!</span><span>Officiis aliquid, quidem sit sequi necessitatibus quam obcaecati ut culpa! Unde et enim deserunt culpa sint. Id ab magni labore ex fugit impedit, voluptatibus maiores tempora deserunt placeat eius fugiat.</span><span>Quos eius inventore, rem harum quam repellat molestias, expedita voluptatum, assumenda debitis culpa. Beatae repellendus possimus blanditiis suscipit. Modi non dicta dignissimos veritatis explicabo delectus aut nobis maiores. Culpa, praesentium?</span></p>
+            </article>
+
+            <article class=" block w-full">
+                <iframe src="https://player.vimeo.com/video/126657137?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="150" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Cristiano Ronaldo vs Liverpool (A) 14-15 HD muted autoplay" class="m-auto"></iframe>
+            </article>
+        </section>
+    </main>
+    <footer class="w-full flex justify-center items-center  bg-[#F89B7E] p-4 end-0">
+        <p>Copyright 2025. Manuel Domingos.</p>
+    </footer>
+</body>
+</html>
