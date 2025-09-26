@@ -1,0 +1,54 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section#first_s, section {
+    padding: 20px;
+}
+
+section#first_s > article > h1 {
+    font-size: 2rem;
+}
+
+section#first_s > article > p, p {
+    line-height: 24px;
+    font-size: 1.2em;
+    text-indent: 16px;
+}
+
+article.mediatotext {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+article.texttomedia {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+div.divmediatotext {
+    flex: 1 1 500px;
+}
+
+div.media {
+    flex: 1 0 400px;
+}
+
+div.media > img {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
